@@ -1,0 +1,104 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_large": false
+      }
+    },
+    "background_video_NbbAit": {
+      "type": "background-video",
+      "settings": {
+        "section_size": "small",
+        "video_url": "https:\/\/youtu.be\/ZfxKZ2jFz_g"
+      }
+    },
+    "slideshow_RdDRFM": {
+      "type": "slideshow",
+      "blocks": {
+        "image_QDFG4p": {
+          "type": "image",
+          "settings": {
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
+        "image_iWXkcp": {
+          "type": "image",
+          "settings": {
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "Yunnan baiyao",
+            "title": "Guarding Life and Health",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
+        "image_qKNhkw": {
+          "type": "image",
+          "settings": {
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "Slide title",
+            "title": "Tell your story",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_QDFG4p",
+        "image_iWXkcp",
+        "image_qKNhkw"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_fullscreen": false,
+        "show_arrow": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
+      }
+    },
+    "text_with_image_b9Txzj": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "萊趣健康",
+        "title": "自然賦能健康生活",
+        "image": "shopify:\/\/shop_images\/man-hiking-in-mountains_1000x_5c9333ce-fe43-4a78-8cdd-5012621168e0.webp",
+        "image_position": "right",
+        "content": "<p>在古代，人類與自然和諧共存，從中獲得智慧和力量。然而，隨著時間的推移，我們的生活變得忙碌而分散，逐漸遠離自然的擁抱，忘記了我們曾經深刻的聯繫。<\/p><p>然而，在這個繁忙而充滿壓力的現代社會中，有一群人保持著對自然的渴望和崇敬。他們相信自然是我們最偉大的教師，也是我們身心健康的源泉。正是這群人創造了一個名為「莱趣健康」的品牌。<\/p><p>「莱趣健康」的品牌色彩是藍色，象徵著寧靜、新鮮和健康。品牌標誌是一個簡化的樹冠形狀，代表著生命、成長和自然的力量。這個標誌象徵著我們對自然的深深敬意，以及我們對可持續發展的承諾。<\/p><p>在「莱趣健康」的故事中，我們繼續追求更健康的生活。我們相信每個人都有權享受健康平衡的生活方式，而這種方式建立在與自然和諧相處的基礎上。<\/p><p>我們的產品範圍包括個人護理產品、草本食品、草本補品和本土草本產品。我們以草本為基礎，結合現代技術和研究，為您提供自然有效的解決方案。我們的個人護理產品以草本成分為核心，幫助您保持口腔、皮膚和身體的健康。我們的草本食品和補品融入了草本的營養益處，為您帶來愉悅而健康的體驗。<\/p><p>「莱趣健康」代表著重新與自然建立聯繫的旅程，追求平衡，重新發現我們內在的美麗和力量。我們希望每個人都能與自然建立深厚的聯繫，探索自然所帶來的智慧。<\/p><p>讓我們一起擁抱「莱趣健康」帶來的健康、和諧和喜悅。<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "custom_html_rUNFkD": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "整合全球優質資源",
+        "title": "品牌授權",
+        "html": "<div style=\"display: flex; text-align: center\">\n      <div style=\"width: 32%; margin-right:1%;margin-left:1%; \">\n<img style=\"height:200px\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/logo-chenlixin.jpg?v=1710816327\">\n        <h3> 陳力新\n<\/h3>\n        <p style=\"text-align:left\">\n莱趣健康是陳力新的全球合作夥伴，我們共同為消費者提供草本食品補充劑，以促進他們的健康和活力。陳力新是來自中國湖南的百年老字號中藥品牌，非常期待為您的日常保健服務。<\/p>\n我們堅持嚴格使用材料，傳承中醫傳統文化，保留傳統工藝對原料味道的原汁原味，倡導基於藥食同源的健康生活方式，並不斷開發和創新草本食療食品。\n莱趣健康與陳立新合作，致力於提供高質量的草本食品補充劑，以支持客戶的整體健康。我們共同提供一系列草本產品，為客戶的綜合健康提供支持。\n<p><\/p>\n<\/div>\n      <div style=\"width: 32%; margin-right:1%;margin-left:1%; \">\n<img style=\"height:200px\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0645\/7573\/3927\/files\/winona_logo.png?v=1721111443\">\n        <h3> 薇諾娜\n<\/h3>\n        <p style=\"text-align:left\">\n莱趣健康是薇諾娜在香港的合作夥伴，我們共同為香港消費者提供更為自然的敏感護理類護膚產品，為消費者享受更美好的形象服務。<\/p>薇諾娜是專注敏感肌膚的皮膚學級護膚品牌。 以“解決常見的問題肌膚“為初心，致力於在敏感肌膚問題領域不斷研究，提供敏感肌膚正確修護及科學護理理念，通過探尋雲南特有植物的活性成分，運用科技萃取，採用温和科學的配方，以GMPC標準生產，研發出適合敏感肌的護膚品，改善肌膚常見敏感問題，修護肌膚屏障。\n\n<p><\/p>\n<\/div>\n\n<\/div>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "background_video_NbbAit",
+    "slideshow_RdDRFM",
+    "text_with_image_b9Txzj",
+    "custom_html_rUNFkD"
+  ]
+}

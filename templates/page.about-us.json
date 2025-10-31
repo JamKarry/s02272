@@ -1,0 +1,61 @@
+{
+  "sections": {
+    "featured_video_REY7FJ": {
+      "type": "featured-video",
+      "disabled": true,
+      "settings": {
+        "section_size": "normal",
+        "text_color": "#ffffff",
+        "subheading": "",
+        "title": "",
+        "video_url": ""
+      }
+    },
+    "background_video_rLACXU": {
+      "type": "background-video",
+      "settings": {
+        "section_size": "normal",
+        "video_url": "https:\/\/youtu.be\/ZfxKZ2jFz_g"
+      }
+    },
+    "image_with_text_overlay_XtnBdQ": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "section_size": "small",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_large": true
+      }
+    },
+    "map_Eqqrgg": {
+      "type": "map",
+      "settings": {
+        "title": "地址",
+        "address": "<p>香港九龙旺角弥敦道610号荷李活商业中心18楼1805-06室<\/p>",
+        "hours": "<p>周一至周五，上午 10 点至晚上 9 点；<\/p><p>周六，上午 11 点至晚上 9 点；<\/p><p>周日，上午 11 点至下午 5 点<\/p>",
+        "map_address": "nit 1805-06, 18\/F, Hollywood Plaza,610 Nathan Road, Mongkok, Kowloon, Hong Kong.",
+        "map_link_label": "導航到此處",
+        "api_key": "AIzaSyBGzTTstEYzmgL2IrCb9DnCooWB3GHj81U",
+        "zoom": 15,
+        "map_style": "silver"
+      }
+    }
+  },
+  "order": [
+    "featured_video_REY7FJ",
+    "background_video_rLACXU",
+    "image_with_text_overlay_XtnBdQ",
+    "main",
+    "map_Eqqrgg"
+  ]
+}

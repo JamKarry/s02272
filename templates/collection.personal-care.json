@@ -1,0 +1,50 @@
+{
+  "sections": {
+    "custom_html_iQKnhw": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<div style=\"display: flex; text-align: center;height:200px;background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/blog-img-Adansonia_Digitata.jpg?v=1710855188)\">\n<div style=\"width:80%;margin:auto; position:absolute; top:0; left:10%; right:10%; bottom:0\">\n<h1>PERSONAL CARE\n<\/h1>\n<p style=\"text-align:left;\">\nPersonal care products are designed to enhance and maintain personal hygiene, grooming, and overall well-being. They are an essential part of our daily self-care routines, helping us look and feel our best. Personal care products encompass various items that cater to various needs and preferences.<br>\nOne popular category of personal care products is Oral care products, which are essential for maintaining good dental hygiene. Toothpaste, toothbrushes, mouthwashes, and dental floss are everyday oral care products. They help prevent tooth decay, gum diseases, and bad breath while promoting fresh breath and a healthy smile.\n<\/p>\n<\/div>\n<\/div>"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "custom_css": [],
+      "settings": {
+        "set_height": 200,
+        "show_collection_info": true,
+        "show_collection_image": false,
+        "apply_overlay": true,
+        "show_color_swatch": false,
+        "show_vendor": false,
+        "collection_image_size": "small",
+        "show_sort_by": true,
+        "show_layout_switch": true,
+        "toolbar_position": "top",
+        "show_filters": true,
+        "show_filter_color_swatch": true,
+        "expand_filters": true,
+        "filter_position": "drawer",
+        "filter_menu": "",
+        "grid_items_per_page": 36,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "title": "Recently viewed",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
+      }
+    }
+  },
+  "order": [
+    "custom_html_iQKnhw",
+    "main",
+    "recently-viewed-products"
+  ]
+}

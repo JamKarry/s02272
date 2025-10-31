@@ -1,0 +1,140 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_large": false
+      }
+    },
+    "background_video_iQpKy7": {
+      "type": "background-video",
+      "settings": {
+        "section_size": "small",
+        "video_url": "https:\/\/youtu.be\/ZfxKZ2jFz_g?t=4"
+      }
+    },
+    "slideshow_RdDRFM": {
+      "type": "slideshow",
+      "blocks": {
+        "image_QDFG4p": {
+          "type": "image",
+          "settings": {
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
+        "image_iWXkcp": {
+          "type": "image",
+          "settings": {
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "Yunnan baiyao",
+            "title": "Guarding Life and Health",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_QDFG4p",
+        "image_iWXkcp"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_fullscreen": false,
+        "show_arrow": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
+      }
+    },
+    "text_with_image_b9Txzj": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "subheading": "BYNATURE",
+        "title": "EMPOWER THE DESIRE FOR A HEALTHIER LIFE",
+        "image_position": "right",
+        "content": "<p>In ancient times, humans coexisted harmoniously with nature, drawing wisdom and strength from it. However, as time passed, our lives became busy and fragmented, and we gradually distanced ourselves from the embrace of nature, forgetting the profound connection we once had.Yet, in this bustling and stressful modern world, there is a group of people who maintain a longing and reverence for nature. They believe that nature is our greatest teacher and the source of our physical and mental well-being. It is this group of people who created a brand called BYNATURE.The brand color of BYNATURE is blue, symbolizing tranquility, freshness, and health. The brand logo is a simplified tree canopy shape, representing life, growth, and the power of nature. This logo is a symbol of our deep reverence for nature and our commitment to sustainable development.<br\/>In the story of BYNATURE, we continue to embody a desire for a healthier life. We believe that everyone has the right to enjoy a healthy and balanced lifestyle, which is founded on living in harmony with nature.Our product range includes personal care products, herbal food products, herbal supplements, and native herbal products. We base our products on herbs, combining modern technology and research to provide you with natural and effective solutions. Our personal care products, centered around herbal ingredients, help you maintain a healthy oral cavity, skin, and body. Our herbal food products and supplements infuse the nutritional benefits of herbs, offering you a delightful and healthful experience.BYNATURE represents a journey of reconnecting with nature, seeking balance, and rediscovering our inherent beauty and strength. We aspire for each individual to establish a deep connection with nature, and to explore the wisdom that nature has to offer.<br\/>Let us together embrace the health, harmony, and joy that BYNATURE brings.<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "custom_html_rUNFkD": {
+      "type": "custom-html",
+      "disabled": true,
+      "settings": {
+        "subheading": " leverages global resources",
+        "title": "Brand Licensing",
+        "html": "<p>Write your own custom HTML content.<\/p>"
+      }
+    },
+    "text_with_image_VKR7Hg": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "願景",
+        "title": "自然賦能健康生活",
+        "image": "shopify:\/\/shop_images\/bg-sg_1000x_b31156b8-5646-4f37-8215-c216180e1a0b.webp",
+        "image_position": "right",
+        "content": "<p>萊趣健康是一家在香港開展本地運營的公司，致力於推廣整體健康，通過自然食品、草本營養和傳統草本產品。<\/p><p>我們的願景是通過提供全球最優質的草本產品，賦予個人獲得更健康生活的能力。我們的運營基於可持續發展、品質和創新。<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "text_with_image_3a6y7g": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "subheading": "Mission",
+        "title": "",
+        "image_position": "right",
+        "content": "",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "image_with_text_overlay_Bmjppg": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "small",
+        "image": "shopify:\/\/shop_images\/bg-mission_1500x_9a745825-ed32-4fb6-a721-dadb88f27a2a.webp",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "subheading": "使命",
+        "title": "通過提供世界上最優質的草本產品，幫助人們過上更健康的生活",
+        "content": "<p>我們整合頂級的植物成分和資源，提供自然養護和促進整體福祉的健康解決方案。我們致力於卓越品質，確保我們精心挑選的草本產品的純度、效力和功效。<\/p><p>我們關注可持續發展，努力為消費者提供更健康的產品和服務。加入我們，與萊趣健康一起走向更健康的生活，成為您高品質草本產品的可信賴來源。<\/p>"
+      }
+    },
+    "custom_html_FxmNCK": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "商業目標",
+        "html": "<div style=\"display: flex; text-align: center\">\n      <div style=\"width: 19%; margin-right:0.4%;margin-left:0.4%\">\n        <h3> 收入增長<\/h3>\n        <p>通過擴大產品線和市場覆蓋範圍，實現持續且可持續的年度收入增長。\n<\/p>\n      <\/div>\n      <div style=\"width: 19%;;color:#FFF; margin-right:0.4%;margin-left:0.4%; background-color:#1364DD \">\n        <h3 style=\"color:#FFF\">市場拓展<\/h3>\n        <p>通過進入香港臨近國家和地區，擴大市場覆蓋範圍，開拓新的客戶和細分市場。\n<\/p>\n      <\/div>\n      <div style=\"width: 19%; margin-right:0.4%;margin-left:0.4%\">\n        <h3>產品創新<\/h3>\n        <p> 我們將持續創新並推出新產品，以滿足不斷變化的客戶需求，並保持競爭力。\n<\/p>\n      <\/div>\n      <div style=\"width: 19%;color:#FFF; margin-right:0.4%;margin-left:0.4%;margin-left:0.4%; background-color:#1364DD \">\n        <h3 style=\"color:#FFF\">可持續發展\n\n<\/h3>\n        <p>通過採購環保材料、盡量減少包裝廢棄物和探索可再生能源方案，促進可持續發展。\n\n\n<\/p>\n      <\/div>\n      <div style=\"width: 19%; margin-left:0.4%; margin-right:0.4%\">\n        <h3>客戶參與\n<\/h3>\n        <p>\n我們將通過參與社區建設、創建資訊內容和舉辦研討會，培養忠實的客戶群。\n\n\n\n<\/p>\n      <\/div>\n    <\/div>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "background_video_iQpKy7",
+    "slideshow_RdDRFM",
+    "text_with_image_b9Txzj",
+    "custom_html_rUNFkD",
+    "text_with_image_VKR7Hg",
+    "text_with_image_3a6y7g",
+    "image_with_text_overlay_Bmjppg",
+    "custom_html_FxmNCK"
+  ]
+}

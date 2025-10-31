@@ -1,0 +1,907 @@
+{% comment %} 自定义 {% endcomment %}
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="//cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="{{ 'jquery.range.css' | asset_url }}">
+<script src="https://www.jq22.com/demo/jRange202006142222/jquery.range.js"></script>
+<script src="//cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
+<style>
+  .filters-view {
+    margin-top: 50px;
+  }
+  .filter-group-display__price-range {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .filter-group-display__price-range-from,
+  .filter-group-display__price-range-to {
+    border: 1px solid #717171;
+    padding: 2px 10px;
+  }
+  .filter-group-display__price-range-from input,
+  .filter-group-display__price-range-to input {
+    border: none;
+  }
+  .filter-group-1 {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  .filter-group-display__list {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+  }
+  .checkboxinput {
+    display: none;
+  }
+  .filter-group-display__list-item {
+    cursor: pointer;
+    flex: 1;
+    margin-right: 5px;
+    text-align: center;
+    position: relative;
+  }
+  .filter-group-display__list-item:last-child {
+    margin-right: 0;
+  }
+  .filter-group-display__list-item label {
+    margin: 0;
+    height: 100%;
+  }
+  .filter-group-display__list-item::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #e3e3e3;
+    position: absolute;
+    top: -5px;
+  }
+
+  .filter-group-display__list {
+    list-style: none;
+  }
+  .filter-group-display__submit {
+    display: block;
+  }
+  .filter-group-display__list-item.active::before {
+    background-color: #8271fc;
+  }
+  .filter-group-display__list-item label {
+    width: 100%;
+    cursor: pointer;
+  }
+  .product-thead {
+    background-color: #f8f8f8;
+  }
+  .product-thead .t-title {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  td,
+  th {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle !important;
+    padding: 20px 10px !important;
+  }
+  .table {
+    margin-top: 50px;
+  }
+  .table > thead:first-child > tr:first-child > td,
+  .table > thead:first-child > tr:first-child > th {
+    border: none;
+  }
+  .table > tbody > tr:first-child > td,
+  .table > tbody > tr:first-child > th {
+    border: none;
+  }
+  .table > tbody > tr > td:last-child,
+  .table > tbody > tr > th:last-child {
+    padding-right: 0 !important;
+  }
+  .view-btn {
+    background-color: #e9e5e5;
+    font-size: 12px;
+    font-weight: 200;
+    color: #717171;
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    border-radius: 0;
+  }
+  .view-btn:hover {
+    color: #8271fc;
+  }
+  #product-filter-table > tbody > tr {
+    cursor: pointer;
+  }
+  .d-none {
+    display: none;
+  }
+  .hr {
+    background-color: #f8f8f8;
+    height: 1.5px;
+    width: 37.5%;
+  }
+  .Advanced-btn {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #f6f6f6;
+    padding: 10px 20px;
+    font-size: 13px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .Advanced-btn .Icon {
+    margin-right: 15px;
+    transition: all 0.3s ease-in-out;
+  }
+  .Advanced-btn.active .Icon {
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+  }
+  .clearbtn {
+    font-size: 13px;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  .clearbtn-view {
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+  }
+  .AdvancedBtn-view {
+    margin-top: 50px;
+  }
+  .ct-v {
+    position: relative;
+  }
+  .filter-group-display__price-range {
+    position: absolute;
+    top: -50px;
+    width: 97%;
+  }
+  .table-even > tbody > tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+  }
+  .shape-img {
+    width: 100%;
+    height: 100%;
+  }
+  .shape-img img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  #shape .filter-group-display__list-item {
+    height: 50px;
+  }
+  #shape .filter-group-display__list-item img {
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  #shape .filter-group-display__list-item.active img {
+    border: 1px solid;
+  }
+  #shape .filter-group-display__list-item label {
+    display: none;
+  }
+  #shape .filter-group-display__list-item::before {
+    display: none;
+  }
+  .filter-table-v {
+    max-height: 300px;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+  }
+  .filter-table-v.show {
+    max-height: 1500px;
+    transition: all 0.6s ease-in-out;
+  }
+
+  @media(max-width:980px) {
+    .filter-group-display__price-range {
+      width: auto;
+    }
+    #product-filter-table_wrapper.dataTables_wrapper {
+      width: 100%;
+      overflow: auto;
+    }
+    .filter-group-display__list {
+      flex-wrap: wrap;
+    }
+    .filter-group-display__list-item {
+      margin: 10px;
+    }
+    .filter-group-1 {
+      flex-wrap: wrap;
+    }
+    .filter-group-summary-1 {
+      text-align: center;
+    }
+  }
+</style>
+{% comment %} 自定义结束 {% endcomment %}
+<div class="filters-view">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="filter-group-1">
+          <div class="filter-group-summary-1 col-md-2">
+            <div>
+              <span>Carat</span>
+            </div>
+          </div>
+
+          <div class="filter-group-display-1 col-md-10 ct-v">
+            <div class="filter-group-display__price-range ">
+              <div class="filter-group-display__price-range-from">
+
+
+                <input
+                  class="w-filter-l-v"
+
+                  type="number"
+                  placeholder="0"
+                  min="0"
+                  max="0.00">
+                <span>ct</span>
+              </div>
+              <div class="filter-group-display__price-range-to">
+
+                <input
+                  class="w-filter-r-v"
+                  value="0.00"
+                  type="number"
+                  placeholder="0.00"
+                  min="0"
+                  max="0.00">
+                <span>ct</span>
+              </div>
+
+
+            </div>
+            <div class="weght" id="weight">
+              <input
+                type="hidden"
+                class="weght-input"
+                value="0,20" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <script>
+        $(function() {
+          let filter = {{ collection.filters | json }};
+          console.log(filter)
+        })
+      </script>
+      <div class="col-md-12">
+        <div class="filter-table-v">
+          <form class="filter-form">
+
+            {%- for filter in collection.filters -%}
+              <div class="filter-group-1">
+                <div class="filter-group-summary-1 col-md-2 col-xs-12">
+                  <div>
+                    <span>{{ filter.label }}</span>
+
+                    {%- if filter.active_values.size > 0 -%}
+                      <span>({{ filter.active_values.size }})</span>
+                    {%- endif -%}
+                  </div>
+                </div>
+
+                <div class="filter-group-display-1 col-md-10 ct-v col-xs-12">
+                  {%- case filter.type -%}
+                    {%- when 'boolean' or 'list' -%}
+                      <ul class="filter-group-display__list" id="{{ filter.label }}">
+                      {% comment %} 如果是 Polishing {% endcomment %}
+                      {% if filter.label == 'Polishing' or filter.label == 'Symmetry' %}
+                        {% assign values = filter.values | sort: 'label' %}
+                        {%- for filter_value in values -%}
+                          {% if forloop.index != 2 %}
+                            <li class="filter-group-display__list-item" data-src="{{ filter_value.label }}">
+                              <label for="Filter-{{ filter.param_name }}-{{ forloop.index }}">
+                                <input
+                                  type="checkbox"
+                                  name="{{ filter_value.param_name }}"
+                                  class="checkboxinput"
+                                  value="{{ filter_value.value }}"
+                                  id="Filter-{{ filter.param_name }}-{{ forloop.index }}"
+                                  {% if filter_value.active -%}checked{%- endif %}>{{ filter_value.label }}</label>
+                              <img src="" />
+                            </li>
+                          {% endif %}
+                        {%- endfor -%}
+                        {%- for filter_value in values -%}
+                          {% if forloop.index == 2 %}
+                            <li class="filter-group-display__list-item" data-src="{{ filter_value.label }}">
+                              <label for="Filter-{{ filter.param_name }}-{{ forloop.index }}">
+                                <input
+                                  type="checkbox"
+                                  name="{{ filter_value.param_name }}"
+                                  class="checkboxinput"
+                                  value="{{ filter_value.value }}"
+                                  id="Filter-{{ filter.param_name }}-{{ forloop.index }}"
+                                  {% if filter_value.active -%}checked{%- endif %}>{{ filter_value.label }}</label>
+                              <img src="" />
+                            </li>
+                          {% endif %}
+                        {%- endfor -%}
+                      {% else %}
+                        {% assign values = filter.values %}
+                        {%- for filter_value in values reversed -%}
+
+                          <li class="filter-group-display__list-item" data-src="{{ filter_value.label }}">
+                            <label for="Filter-{{ filter.param_name }}-{{ forloop.index }}">
+                              <input
+                                type="checkbox"
+                                name="{{ filter_value.param_name }}"
+                                class="checkboxinput"
+                                value="{{ filter_value.value }}"
+                                id="Filter-{{ filter.param_name }}-{{ forloop.index }}"
+                                {% if filter_value.active -%}checked{%- endif %}>{{ filter_value.label }}</label>
+
+                            <img src="" />
+
+                          </li>
+                        {% endfor %}
+                      {% endif %}
+                    </ul>
+
+                    <div class="filter-group-display__submit" style="display:none;">
+                      <input type="submit" value="Apply">
+                    </div>
+                    {%- when 'price_range' -%}
+                    <div class="filter-group-display__price-range ">
+                      <div class="filter-group-display__price-range-from">
+
+                        <span>{{ cart.currency.symbol }}</span>
+                        <input
+                          class="filter-l-v"
+                          name="{{ filter.min_value.param_name }}"
+                          id="Filter-{{ filter.min_value.param_name }}"
+                          {% if filter.min_value.value -%}value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"{%- endif %}type="number"placeholder="0"min="0"max="{{ filter.range_max | money_without_currency | replace: ',', '' }}">
+                      </div>
+                      <div class="filter-group-display__price-range-to">
+                        <span>{{ cart.currency.symbol }}</span>
+                        <input
+                          class="filter-r-v"
+                          name="{{ filter.max_value.param_name }}"
+                          id="Filter-{{ filter.max_value.param_name }}"
+                          {% if filter.max_value.value -%}value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"{%- endif %}type="number"placeholder="{{ filter.range_max | money_without_currency | replace: ',', '' }}"min="0"max="{{ filter.range_max | money_without_currency | replace: ',', '' }}">
+
+                      </div>
+
+
+                    </div>
+                    <div id="price">
+                      <input
+                        type="hidden"
+                        class="slider-input"
+                        value="0,{{ filter.range_max | money_without_currency | replace: ',', '' }}" />
+                    </div>
+
+                  {%- endcase -%}
+                </div>
+              </div>
+            {%- endfor -%}
+
+            <div class="active-filters" style="display:none;">
+              <a href="{{ collection.url }}?sort_by={{ collection.sort_by }}" class="active-filters__clear ">Clear all</a>
+
+              {%- for filter in collection.filters -%}
+                {%- if filter.type == "price_range" -%}
+                  {%- if filter.min_value.value != nil or filter.max_value.value != nil -%}
+                    <a class="active-filters__remove-filter" href="{{ filter.url_to_remove }}">
+                      {%- assign min_value = filter.min_value.value | default: 0 -%}
+                      {%- assign max_value = filter.max_value.value | default: filter.range_max -%}
+                      {{ min_value | money }} - {{ max_value | money }} X
+                    </a>
+                  {%- endif -%}
+                {%- else -%}
+                  {%- for filter_value in filter.active_values -%}
+                    <a class="active-filters__remove-filter" href="{{ filter_value.url_to_remove }}">
+                      {{ filter.label }}: {{ filter_value.label }} X
+                    </a>
+                  {%- endfor -%}
+                {%- endif- %}
+              {%- endfor -%}
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+    <div class="row AdvancedBtn-view">
+      <div class="col-md-12 clearbtn-view">
+        <div class="clearbtn">Clear All</div>
+      </div>
+      <hr class="col-md-5 hr">
+      <div class="col-md-3">
+        <div class="Advanced-btn">
+          <svg
+            class="Icon Icon--select-arrow "
+            role="presentation"
+            viewBox="0 0 19 12">
+            <polyline
+              fill="none"
+              stroke="currentColor"
+              points="17 2 9.5 10 2 2"
+              fill-rule="evenodd"
+              stroke-width="2"
+              stroke-linecap="square"></polyline>
+          </svg>Advanced filtering</div>
+      </div>
+      <hr class="col-md-5 hr">
+    </div>
+  </div>
+
+</div>
+
+<div class="container">
+  <div class="row" id="table-v-l">
+    <table
+      class="table table-condensed table-even "
+      width="100%"
+      id="product-filter-table">
+      <thead class="product-thead">
+        <tr>
+          <th>
+            <div class="t-title">Shape</div>
+          </th>
+          <th>
+            <div class="t-title">Carat</div>
+          </th>
+          <th>
+            <div class="t-title">Price</div>
+          </th>
+          <th>
+            <div class="t-title">Color</div>
+          </th>
+          <th>
+            <div class="t-title">Clarity</div>
+          </th>
+          <th>
+            <div class="t-title">Cut</div>
+          </th>
+          <th>
+            <div class="t-title">Polishing</div>
+          </th>
+          <th>
+            <div class="t-title">Symmetry</div>
+          </th>
+          <th>
+            <div class="t-title">Fluorescence</div>
+          </th>
+          <th>
+            <div class="t-title">other</div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for product in collection.products %}
+          <tr data-filter-fluorescence="{{product.metafields.custom.fluorescence.value}}"data-filter-symmetry="{{product.metafields.custom.symmetry.value}}"data-filter-clarity="{{product.metafields.custom.clarity.value}}"data-filter-color="{{product.metafields.custom.color.value}}"data-filter-polishing="{{product.metafields.custom.polishing.value}}"data-filter-cut="{{product.metafields.custom.cut.value}}"data-filter-shape="{{product.metafields.custom.shape.value}}"data-filter-weight="{{product.metafields.custom.weight.value}}">
+            <td>
+              {% if product.metafields.filter.shape.value %}
+                <div class="shape-img" data-src="{{ product.metafields.filter.shape.value }}">
+                  <img src="" />
+                </div>
+              {% else %}
+                --
+              {% endif %}
+            </td>
+            <td>
+              {% if product.metafields.custom.weight.value %}
+                <div class="weight" data-weight="{{ product.metafields.custom.weight.value }}">
+                  {{ product.metafields.custom.weight.value }}
+                </div>
+              {% else %}
+                --
+              {% endif %}
+            </td>
+            <td>{{ product.price | money }}</td>
+            <td>
+              {% if product.metafields.custom.color.value %}
+                <div class="color" data-color="{{ product.metafields.custom.color.value }}">
+                  {{ product.metafields.custom.color.value }}
+                </div>
+              {% else %}
+                --
+              {% endif %}
+            </td>
+            <td>
+              {% if product.metafields.custom.clarity.value %}
+                <div class="clarity" data-clarity="{{ product.metafields.custom.clarity.value }}">
+                  {{ product.metafields.custom.clarity.value }}
+                </div>
+              {% else %}
+                --
+              {% endif %}
+            </td>
+            <td>
+              {% if product.metafields.custom.cut.value %}
+                <div class="cut" data-cut="{{ product.metafields.custom.cut.value }}">
+                  {{ product.metafields.custom.cut.value }}
+                </div>
+              {% else %}
+                --
+              {% endif %}
+            </td>
+            <td>
+              {% if product.metafields.custom.polishing.value %}
+                <div class="polishing" data-polishing="{{ product.metafields.custom.polishing.value }}">
+                  {{ product.metafields.custom.polishing.value }}
+                </div>
+              {% else %}
+                --
+              {% endif %}
+            </td>
+            <td>
+              {% if product.metafields.custom.symmetry.value %}
+                <div class="symmetry" data-symmetry="{{ product.metafields.custom.symmetry.value }}">
+                  {{ product.metafields.custom.symmetry.value }}
+                </div>
+              {% else %}
+                --
+              {% endif %}
+            </td>
+            <td>
+              {% if product.metafields.custom.fluorescence.value %}
+                <div class="fluorescence" data-fluorescence="{{ product.metafields.custom.fluorescence.value }}">
+                  {{ product.metafields.custom.fluorescence.value }}
+                </div>
+              {% else %}
+                --
+              {% endif %}
+            </td>
+            <td>
+              <a class="btn view-btn" href="{{product.url}}">View Diamonds</a>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
+
+
+<script>
+
+  $(document).ready(function() {
+
+// 表单
+    $('#product-filter-table').DataTable({"autoWidth": true});
+    $('.product-thead').each(i => {
+      if (i >= 1) 
+        $('.product-thead').eq(i).css('display', 'none');
+      
+
+
+
+    })
+
+// 图标数据 
+    const imgurl = {
+      "emerald": "{{ 'emerald .png' | asset_url }}",
+      "heart": "{{ 'heart.jpeg' | asset_url }}",
+      "oval": "{{ 'oval.jpeg' | asset_url }}",
+      "pear": "{{ 'pear.jpeg' | asset_url }}",
+      "pincushion": "{{ 'pincushion.jpeg' | asset_url }}",
+      "princess": "{{ 'princess .png' | asset_url }}",
+      "radiant": "{{'radiant.jpeg' | asset_url}}",
+      "round": "{{'round.jpeg' | asset_url}}",
+      "marquise": "{{'marquise.png' | asset_url}}"
+    }
+    $('.shape-img')
+      .each(i => {
+        let url = $('.shape-img').eq(i).attr('data-src');
+        url = $.trim(url);
+        $('.shape-img').eq(i).find('img').attr('src', imgurl[url])
+      })
+
+  // 图标
+      $('#shape .filter-group-display__list-item')
+      .each(i => {
+        let url = $('#shape .filter-group-display__list-item').eq(i).attr('data-src');
+        url = $.trim(url);
+        $('#shape .filter-group-display__list-item').eq(i).find('img').attr('src', imgurl[url])
+      })
+      $('#shape .filter-group-display__list-item img')
+      .click(function() {
+        console
+          .log($(this).siblings('label').text())
+          $(this)
+          .siblings('label')
+          .find('input')
+          .trigger('click')
+      })
+
+  // 高级筛选按钮事件
+      $('.Advanced-btn')
+      .click(function() {
+        $('.filter-table-v').toggleClass('show')
+        $(this).toggleClass('active')
+      })
+
+
+// 表格跳转
+    $('#product-filter-table > tbody > tr')
+    .click(function() {
+      let linkto = $(this)
+        .find('.view-btn')
+        .attr('href')
+        window
+        .location
+        .href = linkto
+    })
+
+
+// 刷新页面显示选中项目
+  var filterGroup = $('.filter-group-display__list-item');
+  filterGroup.each(i => {
+    console.log($(filterGroup).eq(i).find('input[type="checkbox"]').attr("checked"))
+    if ($(filterGroup).eq(i).find('input[type="checkbox"]').attr("checked")) {
+      $(filterGroup).eq(i).addClass('active')
+    }
+  })
+
+// 刷新页面显示选中范围
+  let min = $('.filter-l-v').val();
+  let max = $('.filter-r-v').val();
+  console.log(min)
+  let slider = (min + "," + max).toString();
+  $('.slider-input')
+    .val(slider)
+
+  // 失去焦点时提交
+    $('.filter-group-display__price-range-from input')
+    .blur(function() {
+      $('.filter-group-display__submit>input[type="submit"]').trigger('click')
+    })
+    $('.filter-group-display__price-range-to input')
+    .blur(function() {
+      $('.filter-group-display__submit>input[type="submit"]').trigger('click')
+    })
+
+  // 列表项点击变蓝
+
+    $('.filter-group-display__list-item')
+    .find('label')
+    .click(function(e) {
+      e.stopPropagation();
+      $('.filter-group-display__submit>input[type="submit"]').trigger('click')
+    })
+
+
+  let maxValue = $('.filter-r-v').attr('max');
+  console.log(maxValue)
+  $('.slider-input').jRange({
+    from: 0, // 最小值
+    to: maxValue, // 最大值
+    step: 1,
+    showLabels: true, // 显示标签
+    showScale: false, // 显示刻度
+    format: '%s', // 设置标签格式
+    width: $('.col-md-10.ct-v').width(), // 宽度
+    theme: "theme-blue", // 主题(默认是"theme-green"绿色),还有"theme-blue"蓝色。你可以在jquery.range.less中设置
+    isRange: true, // 是否为范围(默认false,选择一个点),如果是true，选择的是范围,格式为'1,2'
+    snap: false, // 是否只允许按增值选择(默认false)
+    disable: false, // 是否只读(默认false),若为true,只读模式，无法选择。可以用js动态设置$('.slider').jRange('disable'); $('.slider').jRange('enable'); $('.slider').jRange('toggleDisable');
+    ondragend: function() {
+      let lowval = Number($('#price .pointer-label.low').text());
+      let high = Number($('#price .pointer-label.high').text());
+      console
+        .log(lowval)
+        console
+        .log(high)
+        $('.filter-l-v')
+        .val(lowval.toFixed(2))
+        $('.filter-r-v')
+        .val(high.toFixed(2))
+      $('.filter-group-display__submit>input[type="submit"]')
+      .trigger('click')
+
+// 数字变化的时候的回调函数
+  },
+  onbarclicked: function() {
+    let lowval = parseFloat($('#price .pointer-label.low').text());
+    let high = parseFloat($('#price .pointer-label.high').text());
+    $('.filter-l-v').val(lowval.toFixed(2))
+    $('.filter-r-v').val(high.toFixed(2))
+    $('.filter-group-display__submit>input[type="submit"]').trigger('click')
+  }
+
+});
+
+// 获取当前URL
+var currentUrl = window.location.href;
+
+// 获取当前页面的URL
+
+
+// 获取URL中的重量过滤器值
+var weightFilter = currentUrl.match(/weight_min=([0-9\.]+)&weight_max=([0-9\.]+)/);
+
+// 如果重量过滤器存在
+if (weightFilter) { // 获取最小和最大重量值
+  var minWeight = parseFloat(weightFilter[1]);
+  var maxWeight = parseFloat(weightFilter[2]);
+
+  $('.w-filter-l-v').val(minWeight)
+  $('.w-filter-r-v').val(maxWeight)
+  let weight = (minWeight + "," + maxWeight).toString();
+
+
+  $('.weght-input').val(weight)
+}
+
+$('.weght-input').jRange({
+  from: 0, // 最小值
+  to: 20, // 最大值
+  step: 1,
+  showLabels: true, // 显示标签
+  showScale: false, // 显示刻度
+  format: '%s', // 设置标签格式
+  width: $('.col-md-10.ct-v').width(), // 宽度
+  theme: "theme-blue", // 主题(默认是"theme-green"绿色),还有"theme-blue"蓝色。你可以在jquery.range.less中设置
+  isRange: true, // 是否为范围(默认false,选择一个点),如果是true，选择的是范围,格式为'1,2'
+  snap: false, // 是否只允许按增值选择(默认false)
+  disable: false, // 是否只读(默认false),若为true,只读模式，无法选择。可以用js动态设置$('.slider').jRange('disable'); $('.slider').jRange('enable'); $('.slider').jRange('toggleDisable');
+  ondragend: function() {
+    let lowval = $('#weight .pointer-label.low').text();
+    let high = $('#weight .pointer-label.high').text();
+    $('.w-filter-l-v').val(lowval)
+    $('.w-filter-r-v').val(high)
+
+// 获取URL中的重量过滤器值
+    var weightFilter = currentUrl.match(/weight_min=([0-9\.]+)&weight_max=([0-9\.]+)/);
+
+// 如果重量过滤器存在
+    if (weightFilter) { // 获取最小和最大重量值
+      var minWeight = parseFloat(weightFilter[1]);
+      var maxWeight = parseFloat(weightFilter[2]);
+
+// 刷新页面显示选中范围
+
+// 如果最小重量小于10或最大重量大于100
+// 获取当前URL的基本部分
+
+      var baseUrl = currentUrl.split('?')[0];
+      console.log(minWeight + ">>>>" + maxWeight)
+
+// 构建新的重量过滤器值
+      var newWeightFilter = 'weight_min=' + lowval + '&weight_max=' + high;
+
+// 构建新的URL
+      var newUrl = baseUrl + '?' + newWeightFilter;
+
+// 重定向到新的URL
+      window.location.href = newUrl;
+
+    } else {
+
+      var baseUrl = currentUrl.split('?')[0];
+      console.log(minWeight + ">>>>" + maxWeight)
+
+// 构建新的重量过滤器值
+      var newWeightFilter = 'weight_min=' + lowval + '&weight_max=' + high;
+
+// 构建新的URL
+      var newUrl = baseUrl + '?' + newWeightFilter;
+
+// 重定向到新的URL
+      window.location.href = newUrl;
+
+    }
+
+  },
+  onbarclicked: function() {
+    console.log("000")
+    let lowval = $('#weight .pointer-label.low').text();
+    let high = $('#weight .pointer-label.high').text();
+    $('.w-filter-l-v').val(lowval)
+    $('.w-filter-r-v').val(high)
+
+// 获取URL中的重量过滤器值
+    var weightFilter = currentUrl.match(/weight_min=([0-9\.]+)&weight_max=([0-9\.]+)/);
+
+// 如果重量过滤器存在
+    if (weightFilter) { // 获取最小和最大重量值
+      var minWeight = parseFloat(weightFilter[1]);
+      var maxWeight = parseFloat(weightFilter[2]);
+
+// 刷新页面显示选中范围
+
+// 如果最小重量小于10或最大重量大于100
+// 获取当前URL的基本部分
+
+      var baseUrl = currentUrl.split('?')[0];
+      console.log(minWeight + ">>>>" + maxWeight)
+
+// 构建新的重量过滤器值
+      var newWeightFilter = 'weight_min=' + lowval + '&weight_max=' + high;
+
+// 构建新的URL
+      var newUrl = baseUrl + '?' + newWeightFilter;
+
+// 重定向到新的URL
+      window.location.href = newUrl;
+
+    } else {
+
+      var baseUrl = currentUrl.split('?')[0];
+      console.log(minWeight + ">>>>" + maxWeight)
+
+// 构建新的重量过滤器值
+      var newWeightFilter = 'weight_min=' + lowval + '&weight_max=' + high;
+
+// 构建新的URL
+      var newUrl = baseUrl + '?' + newWeightFilter;
+
+// 重定向到新的URL
+      window.location.href = newUrl;
+
+    }
+  }
+
+});
+
+// 默认输入框值
+let lowval = $('#weight .pointer-label.low').text();
+let high = $('#weight .pointer-label.high').text();
+$('.w-filter-l-v').val(lowval)
+$('.w-filter-r-v').val(high)
+
+
+// 获取所有的产品列表项
+var products = $('#product-filter-table > tbody > tr');
+
+
+products.each(function() {
+  var weight = parseFloat($(this).find('.weight').data('weight'));
+
+// 获取产品重量
+  console.log(weight)
+
+  if (weightFilter) { // 获取最小和最大重量值
+    var minWeight = parseFloat(weightFilter[1]);
+    var maxWeight = parseFloat(weightFilter[2]);
+    if (weight >= minWeight && weight <= maxWeight) {
+      $(this).show();
+    } else {
+      $(this).hide();
+    }
+
+  }
+
+// 如果产品重量大于10且小于200，则显示该产品
+// 清除过滤器
+  $('.clearbtn').click(function() {
+    console.log("111")
+    var baseUrl = currentUrl.split('?')[0];
+    var newUrl = baseUrl + '?sort_by=';
+    window.location.href = newUrl;
+  })
+});});
+</script>

@@ -1,0 +1,174 @@
+{
+  "sections": {
+    "slideshow_qjRkmw": {
+      "type": "slideshow",
+      "blocks": {
+        "image_hxrDWB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/webslide-02_1800x_6f0f6e94-26ed-4d59-9988-4a456db620da.webp",
+            "mobile_image": "shopify:\/\/shop_images\/mobslide-02_x800_0188cf19-8989-4e61-be46-9e415596c5e3.webp",
+            "apply_overlay": false,
+            "content_position": "bottomLeft",
+            "subheading": "草本",
+            "title": "自然提亮",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
+        "image_3tcBpx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/webslide-01_1800x_cb9cc91d-b753-4ef2-8902-5c87c5864b62.webp",
+            "mobile_image": "shopify:\/\/shop_images\/mobslide-01_x800_360802ff-3d8c-49fe-a911-10d912b77786.webp",
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "草本",
+            "title": "汲取自然能量",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
+        "image_WyLhti": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/webslide-03_1800x_7294b035-bf11-4c89-ad56-a7c1e5fbfda7.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/mobslide-03_x800_84d5d7db-8c17-4a52-a560-969d1d03c754.webp",
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "草本",
+            "title": "鏈接自然",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_hxrDWB",
+        "image_3tcBpx",
+        "image_WyLhti"
+      ],
+      "settings": {
+        "show_fullscreen": false,
+        "show_arrow": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_large": false
+      }
+    },
+    "custom_html_xQbFRR": {
+      "type": "custom-html",
+      "disabled": true,
+      "settings": {
+        "subheading": "empower by nature",
+        "title": "about herbs",
+        "html": "<p>Write your own custom HTML content.<\/p>"
+      }
+    },
+    "text_with_image_hWtcDp": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "subheading": "empower by nature",
+        "title": "about herbs",
+        "image_position": "left",
+        "content": "<p>Humans have long used herbal plants for health protection. They contain medicinal compounds like essential oils, alkaloids, and flavonoids, with antioxidation, anti-inflammation, and antimicrobial properties. Herbal plants are vital in modern medicine.<\/p><p>Traditional Chinese Medicine (TCM) extensively uses herbal plants to balance yin and yang, qi, and blood, promoting health. TCM formulations, refined over centuries, treat various ailments.<\/p><p>Modern research explores herbal plants' chemical composition and pharmacological effects, uncovering potential health benefits. Many herbal plants are integrated into pharmaceuticals and healthcare products.<\/p><p>Herbal plants are crucial for preventing and treating diseases due to their diverse therapeutic effects. Further research will expand their applications, enhancing human well-being.<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "blog_posts_TDBrDH": {
+      "type": "blog-posts",
+      "blocks": {
+        "blog_F4me4p": {
+          "type": "blog",
+          "settings": {
+            "blog": "winona"
+          }
+        }
+      },
+      "block_order": [
+        "blog_F4me4p"
+      ],
+      "settings": {
+        "subheading": "薇諾娜",
+        "title": "自然賦能",
+        "show_category": false,
+        "button_link": "shopify:\/\/blogs\/winona",
+        "button_text": "發現更多"
+      }
+    },
+    "custom_html_thqbzM": {
+      "type": "custom-html",
+      "disabled": true,
+      "settings": {
+        "subheading": "WINONA",
+        "title": "POWERED BY NATURE PLANTS",
+        "html": "<div style=\"display: flex; text-align: center\">\n      <div style=\"width: 25%; padding-left:2px; padding-right:2px\">\n<div style=\"height:50px; background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/blog-img-top.jpg?v=1710847581)\">\n<\/div> <!-- herbs background image-->\n        <h3>AVOCADO<\/h3>\n        <p style=\"margin-left:1px;margin-right:1px;; max-height:120px;overflow:hidden; width: relative;white-space: normal;text-overflow: ellipsis\">\nAvocado (Persea americana) is a fruit that is widely known for its creamy texture, mild flavor, and nutritional benefits. Here are some functions and benefits associated with avocado:<br>\nNutritional Profile: Avocados are nutrient-dense fruits. They are rich in healthy monounsaturated fats, which can help promote heart health and reduce bad cholesterol levels. Avocados also contain vitamins such as vitamin K, vitamin E, vitamin C, and B vitamins, as well as minerals like potassium and magnesium.\n<\/p>\n\n\n<a href=\"https:\/\/www.bynatureintl.com\/blogs\/news\/avocado\" target=\"_blank\">Learn more<\/a>\n      <\/div>\n\n\n      <div style=\"width: 25%; padding-left:2px; padding-right:2px\">\n<div style=\"height:50px; background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/top-img.jpg?v=1710852440)\">\n<\/div> <!-- herbs background image-->\n        <h3>RHIZOMA PARIDIS YUNNANENSIS\n<\/h3>\n<p style=\"margin-left:1px;margin-right:1px;  max-height:120px;overflow:hidden; width: relative;white-space: normal;text-overflow: ellipsis\">\nRhizoma paridis yunnanensis, also known as Yunnan Paris Rhizome or Yunnan Paridis, is a medicinal herb that is primarily found in the Yunnan province of China. It has a long history of traditional use in Chinese medicine and is known for its potential health benefits. Here are some functions and uses of Rhizoma paridis yunnanensis in the healthcare field:\n\n<\/p>\n\n\n<a href=\"https:\/\/www.bynatureintl.com\/blogs\/news\/rhizoma-paridis-yunnanensis\" target=\"_blank\">Learn more<\/a>\n      <\/div>\n\n\n<div style=\"width: 25%; padding-left:2px; padding-right:2px\">\n<div style=\"height:50px; background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/img-top.jpg?v=1710852448)\">\n<\/div> <!-- herbs background image-->\n        <h3>YUNNAN CAMELLIA\n<\/h3>\n        <p style=\"margin-left:1px;margin-right:1px;; max-height:120px;overflow:hidden; width: relative;white-space: normal;text-overflow: ellipsis\">Yunnan Camellia, also known as Camellia sinensis or tea plant, is a species of evergreen shrub native to the Yunnan province in China. It is widely cultivated for its leaves, which are primarily used to produce various types of tea. In addition to its popularity as a beverage, Yunnan Camellia also has several functions and benefits when used in skincare products. Here are some of its skincare functions:<\/p>\n\n<a href=\"https:\/\/www.bynatureintl.com\/blogs\/news\/yunnan-camellia\" target=\"_blank\">Learn more<\/a>\n      <\/div>\n\n\n<div style=\"width: 25%; padding-left:2px; padding-right:2px\">\n<div style=\"height:50px; background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/blog-img-utilis_royle.jpg?v=1710852675)\">\n<\/div> <!-- herbs background image-->\n        <h3>PRINSEPIA UTILIS ROYLE<\/h3>\n         <p style=\"margin-left:1px;margin-right:1px;; max-height:120px;overflow:hidden; width: relative;white-space: normal;text-overflow: ellipsis\">Prinsepia utilis Royle comes from the pure Shangri-La Snow Mountain at an altitude of about 3,200 meters, with strong vitality and repair ability. Winona's lab study shows that its extract can repair the skin barrier and keep skin healthy.<\/p>\n<a href=\"https:\/\/www.bynatureintl.com\/blogs\/herbs\/prinsepia-utilis-royle\" target=\"_blank\">Learn more<\/a>\n      <\/div>\n\n <\/div>"
+      }
+    },
+    "custom_html_YdCzWz": {
+      "type": "custom-html",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<div style=\"display: flex; text-align: center\">\n      <div style=\"width: 25%; padding-left:2px; padding-right:2px\">\n<div style=\"height:50px; background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/blog-img-Horse_chestnut.jpg?v=1710853703)\">\n<\/div> <!-- herbs background image-->\n        <h3>Horse chestnut<\/h3>\n        <p style=\"margin-left:1px;margin-right:1px;; max-height:120px;overflow:hidden; width: relative;white-space: normal;text-overflow: ellipsis\">\nHorse chestnut, scientifically known as Aesculus hippocastanum, is a tree native to the Balkans. It is widely used in the healthcare field for various purposes. Here are some common usages of horse chestnut:<br>\nVenous Insufficiency: Horse chestnut extract is commonly used as a natural remedy for chronic venous insufficiency (CVI). CVI is a condition characterized by poor circulation in the veins, often causing symptoms like varicose veins, leg swelling, and leg pain. Horse chestnut extract contains a compound called aescin, which is believed to improve blood flow, reduce inflammation, and strengthen the walls of the veins. It is often used topically or taken orally as a supplement to alleviate symptoms associated with CVI.\n<\/p>\n\n\n<a href=\"https:\/\/www.bynatureintl.com\/blogs\/news\/Horse-chestnut\" target=\"_blank\">Learn more<\/a>\n      <\/div>\n\n\n      <div style=\"width: 25%; padding-left:2px; padding-right:2px\">\n<div style=\"height:50px; background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/blog-img-aloe_vera.jpg?v=1710855188)\">\n<\/div> <!-- herbs background image-->\n        <h3>Aloe vera\n<\/h3>\n<p style=\"margin-left:1px;margin-right:1px;  max-height:120px;overflow:hidden; width: relative;white-space: normal;text-overflow: ellipsis\">\nAloe vera is a succulent plant species that is widely known for its medicinal and skincare properties. It has been used for centuries in traditional medicine systems, and its gel-like substance found in the leaves is used for various purposes. Here are some common usages of aloe vera:<br>\nSkincare: Aloe vera gel is commonly used in skincare products due to its soothing and moisturizing properties. It can help hydrate the skin, reduce inflammation, and promote healing. Aloe vera gel is often used to treat sunburns, minor burns, cuts, and wounds. It may also be used to alleviate skin conditions such as eczema, psoriasis, and acne.\n<\/p>\n\n\n<a href=\"https:\/\/www.bynatureintl.com\/blogs\/news\/Aloe-vera\" target=\"_blank\">Learn more<\/a>\n      <\/div>\n\n\n<div style=\"width: 25%; padding-left:2px; padding-right:2px\">\n<div style=\"height:50px; background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/blog-img-Purple_Echinacea.jpg?v=1710855188)\">\n<\/div> <!-- herbs background image-->\n        <h3>Purple echinacea\n<\/h3>\n        <p style=\"margin-left:1px;margin-right:1px;; max-height:120px;overflow:hidden; width: relative;white-space: normal;text-overflow: ellipsis\">Purple echinacea, also known as purple coneflower, refers to a specific species of flowering plant called Echinacea purpurea. It is a popular herb that is used for its potential medicinal properties. Here are some key aspects of purple echinacea:<br>\nImmune Support: Purple echinacea is commonly used to support and boost the immune system. It is believed to stimulate the activity of immune cells, such as white blood cells, and enhance the body's natural defense mechanisms. It is often consumed as a dietary supplement or herbal tea during times of immune system challenges.<\/p>\n\n<a href=\"https:\/\/www.bynatureintl.com\/blogs\/news\/Purple-echinacea\" target=\"_blank\">Learn more<\/a>\n      <\/div>\n\n\n<div style=\"width: 25%; padding-left:2px; padding-right:2px\">\n<div style=\"height:50px; background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/blog-img-utilis_royle.jpg?v=1710852675)\">\n<\/div> <!-- herbs background image-->\n        <h3>Papaya<\/h3>\n         <p style=\"margin-left:1px;margin-right:1px;; max-height:120px;overflow:hidden; width: relative;white-space: normal;text-overflow: ellipsis\">Papaya, also known as Carica papaya, is a tropical fruit that is widely consumed and appreciated for its taste and nutritional benefits. Here are some key aspects of papaya:<br>\nNutritional Profile: Papaya is a rich source of vitamins and minerals. It is particularly high in vitamin C, providing more than the daily recommended intake in a single serving. Papaya also contains vitamin A, folate, potassium, and several B vitamins. It is low in calories and fat, making it a nutritious addition to a balanced diet.<\/p>\n<a href=\"https:\/\/www.bynatureintl.com\/blogs\/news\/papaya\" target=\"_blank\">Learn more<\/a>\n      <\/div>\n\n <\/div>"
+      }
+    },
+    "custom_html_RP6JC3": {
+      "type": "custom-html",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<div style=\"display: flex; text-align: center\">\n      <div style=\"width: 25%; padding-left:2px; padding-right:2px\">\n<div style=\"height:50px; background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/blog-img-Arbutin.jpg?v=1710855188)\">\n<\/div> <!-- herbs background image-->\n        <h3>Arbutin<\/h3>\n        <p style=\"margin-left:1px;margin-right:1px;; max-height:120px;overflow:hidden; width: relative;white-space: normal;text-overflow: ellipsis\">\nArbutin is a natural compound found in various plants, including bearberry (Arctostaphylos uva-ursi), cranberry, blueberry, and pear. It is widely used in skincare products for its potential skin-brightening and lightening properties. Here are some key aspects of arbutin:<br>\nSkin Brightening: Arbutin is known for its ability to inhibit the enzyme tyrosinase, which is involved in the production of melanin—the pigment responsible for skin color. By inhibiting tyrosinase activity, arbutin can help reduce the production and accumulation of melanin in the skin, leading to a brighter, more even complexion. It is often used to address issues such as hyperpigmentation, dark spots, and melasma.\n<\/p>\n\n\n<a href=\"https:\/\/www.bynatureintl.com\/blogs\/news\/arbutin\" target=\"_blank\">Learn more<\/a>\n      <\/div>\n\n\n      <div style=\"width: 25%; padding-left:2px; padding-right:2px\">\n<div style=\"height:50px; background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/blog-img-Spiraea_Ulmaria.jpg?v=1710855188)\">\n<\/div> <!-- herbs background image-->\n        <h3>Spiraea Ulmaria\n<\/h3>\n<p style=\"margin-left:1px;margin-right:1px;  max-height:120px;overflow:hidden; width: relative;white-space: normal;text-overflow: ellipsis\">\nSpiraea ulmaria, commonly known as meadowsweet, is a perennial herbaceous plant that is native to Europe and western Asia. It is known for its pleasant fragrance and its historical use in traditional medicine. Here are some key aspects of Spiraea ulmaria:<br>\n\nMedicinal Uses: Meadowsweet has a long history of traditional use in herbal medicine. It contains various bioactive compounds, including salicylates, flavonoids, and tannins, which are believed to contribute to its therapeutic properties. Meadowsweet has been used to alleviate pain, reduce fever, and relieve various digestive issues, such as heartburn, stomach ulcers, and indigestion.\n<\/p>\n\n\n<a href=\"https:\/\/www.bynatureintl.com\/blogs\/news\/spiraea-ulmaria\" target=\"_blank\">Learn more<\/a>\n      <\/div>\n\n\n<div style=\"width: 25%; padding-left:2px; padding-right:2px\">\n<div style=\"height:50px; background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/blog-img-Natto.jpg?v=1710855188)\">\n<\/div> <!-- herbs background image-->\n        <h3>Natto\n<\/h3>\n        <p style=\"margin-left:1px;margin-right:1px;; max-height:120px;overflow:hidden; width: relative;white-space: normal;text-overflow: ellipsis\">\nNatto is a traditional Japanese food made from fermented soybeans. It is known for its distinctive taste, aroma, and sticky texture. Natto has been consumed in Japan for centuries and is often enjoyed as a breakfast food or as an ingredient in various dishes. Here are some key aspects of natto:<br>\nFermentation Process: Natto is made by fermenting soybeans with the bacterium called Bacillus subtilis var. natto. This fermentation process breaks down the soybean proteins and produces a variety of beneficial compounds, including enzymes and probiotics.\n<\/p>\n\n<a href=\"https:\/\/www.bynatureintl.com\/blogs\/news\/natto\" target=\"_blank\">Learn more<\/a>\n      <\/div>\n\n\n<div style=\"width: 25%; padding-left:2px; padding-right:2px\">\n<div style=\"height:50px; background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/blog-img-Orthosiphon_stamineus.jpg?v=1710855187)\">\n<\/div> <!-- herbs background image-->\n        <h3>Orthosiphon stamineus<\/h3>\n         <p style=\"margin-left:1px;margin-right:1px;; max-height:120px;overflow:hidden; width: relative;white-space: normal;text-overflow: ellipsis\">Orthosiphon stamineus, commonly known as Java tea or cat's whiskers, is a medicinal plant native to Southeast Asia. It has a long history of traditional use in herbal medicine, particularly in countries like Indonesia, Malaysia, and Thailand. Here are some key aspects of Orthosiphon stamineus:<br>\nMedicinal Uses: Orthosiphon stamineus has been traditionally used for various health purposes. It is known for its diuretic properties, meaning it can increase urine production and promote the elimination of excess fluid from the body. As a result, it has been used to support kidney and urinary tract health, and to help relieve conditions such as edema (fluid retention) and urinary tract infections..<\/p>\n<a href=\"https:\/\/www.bynatureintl.com\/blogs\/news\/orthosiphon-stamineus\" target=\"_blank\">Learn more<\/a>\n      <\/div>\n\n <\/div>"
+      }
+    },
+    "custom_html_BENmp4": {
+      "type": "custom-html",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<div style=\"display: flex; text-align: center\">\n      <div style=\"width: 25%; padding-left:2px; padding-right:2px\">\n<div style=\"height:50px; background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/blog-img-Adansonia_Digitata.jpg?v=1710855188)\">\n<\/div> <!-- herbs background image-->\n        <h3>Adansonia digitata<\/h3>\n        <p style=\"margin-left:1px;margin-right:1px;; max-height:120px;overflow:hidden; width: relative;white-space: normal;text-overflow: ellipsis\">\nAdansonia digitata, commonly known as the baobab tree or African baobab, is a large and iconic tree found in various regions of Africa. It is known for its unique appearance, with a massive trunk and branches that resemble roots. Here are some key aspects of Adansonia digitata:<br>\n\nTree Characteristics: The baobab tree is one of the largest and longest-living flowering trees in the world. It can reach impressive sizes, with a trunk diameter of up to 10 meters (33 feet) and a height of over 20 meters (65 feet). The tree has a distinct shape, with thick, gnarled branches that resemble roots extending upwards.\n<\/p>\n\n\n<a href=\"https:\/\/www.bynatureintl.com\/blogs\/news\/Adansonia-digitata\" target=\"_blank\">Learn more<\/a>\n      <\/div>\n\n\n      <div style=\"width: 25%; padding-left:2px; padding-right:2px\">\n<div style=\"height:50px; background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/blog-img-Seaweed.jpg?v=1710855188)\">\n<\/div> <!-- herbs background image-->\n        <h3>Seaweed\n<\/h3>\n<p style=\"margin-left:1px;margin-right:1px;  max-height:120px;overflow:hidden; width: relative;white-space: normal;text-overflow: ellipsis\">\nSeaweed refers to various types of marine algae that grow in the ocean or other bodies of saltwater. These algae are photosynthetic organisms and are classified into different groups, including red, green, and brown seaweeds. Seaweed has been consumed by humans for centuries and is widely used in various cuisines around the world. Here are some key aspects of seaweed:<br>\nNutritional Profile: Seaweed is highly nutritious and is considered a good source of vitamins, minerals, and other beneficial compounds. It is rich in iodine, which is essential for thyroid function and metabolism. Seaweed also contains varying amounts of other minerals such as calcium, iron, magnesium, and potassium. It is low in calories and fat while providing dietary fiber and proteins. Additionally, seaweed can contain antioxidants, omega-3 fatty acids, and certain vitamins like vitamin A, vitamin C, and vitamin K.\n<\/p>\n<a href=\"https:\/\/www.bynatureintl.com\/blogs\/news\/seaweed\" target=\"_blank\">Learn more<\/a>\n\n <\/div>\n<\/div>"
+      }
+    },
+    "custom_html_d37e7z": {
+      "type": "custom-html",
+      "disabled": true,
+      "settings": {
+        "subheading": "Yunnan baiyao",
+        "title": "ji-nature",
+        "html": ""
+      }
+    }
+  },
+  "order": [
+    "slideshow_qjRkmw",
+    "main",
+    "custom_html_xQbFRR",
+    "text_with_image_hWtcDp",
+    "blog_posts_TDBrDH",
+    "custom_html_thqbzM",
+    "custom_html_YdCzWz",
+    "custom_html_RP6JC3",
+    "custom_html_BENmp4",
+    "custom_html_d37e7z"
+  ]
+}

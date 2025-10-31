@@ -1,0 +1,143 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": true,
+            "show_sku": false,
+            "show_product_rating": true,
+            "show_taxes_included": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "share_buttons": {
+          "type": "share_buttons",
+          "settings": {}
+        },
+        "variant_selector": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "dropdown",
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "size_chart": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_label": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": true
+          }
+        }
+      },
+      "block_order": [
+        "product_meta",
+        "description",
+        "share_buttons",
+        "variant_selector",
+        "quantity_selector",
+        "buy_buttons"
+      ],
+      "settings": {
+        "is_Automatic": false,
+        "Switching_interval": 5,
+        "arrow_bg": "",
+        "arrow_border": "#000000",
+        "arrow": "#000000",
+        "active_arrow_bg": "#0367fe",
+        "active_arrow_border": "#0367fe",
+        "active_arrow": "#ffffff",
+        "pagination_ba": "#000000",
+        "image_size": "large",
+        "stack_images": true,
+        "show_thumbnails": true,
+        "enable_image_zoom": true,
+        "enable_video_looping": false
+      }
+    },
+    "add_product_describe_yhhwDq": {
+      "type": "add-product-describe",
+      "settings": {}
+    },
+    "custom_liquid_WtDGtr": {
+      "type": "custom-liquid",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "<div align=\"center\" style=\"width: 100%\">\n\t<div align=\"center\" style=\"width: 100%\">\n\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0645\/7573\/3927\/files\/02_65ba0cf1-ff24-4edf-a474-9b38168da9cf.jpg?v=1721389022\" align=\"center\">\t\t\t<\/div>\n\n<div align=\"center\" style=\"width: 100%\">\n\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0645\/7573\/3927\/files\/01_009f02b3-6b16-4936-8fb0-d28890994059.jpg?v=1721389023\" align=\"center\">\t\t\t<\/div>\n<div align=\"center\" style=\"width: 100%\">\t\n\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0645\/7573\/3927\/files\/03_4e8b68ff-a5a9-468b-a2f0-2e7f59ee173c.jpg?v=1721389023\" align=\"center\">\t\t\t<\/div>\t\n<div align=\"center\" style=\"width: 100%\">\n\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0645\/7573\/3927\/files\/04_b67db091-92c2-4659-917a-f047fd03e2a1.jpg?v=1721389023\" align=\"center\">\t\t\t<\/div>\t\n\t\n\t\n\t\n\t\n\t<\/div>"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "blocks": {
+        "df0bcf14-a009-4bdf-921b-1c4c6a97b3b9": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "df0bcf14-a009-4bdf-921b-1c4c6a97b3b9"
+      ],
+      "settings": {
+        "heading": "您可能還喜歡",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "title": "最近瀏覽",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
+      }
+    },
+    "1710920027600d6fcf": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "add_product_button_RUCVkj": {
+      "type": "add-product-button",
+      "settings": {
+        "bg_color": "#ffffff",
+        "border_color": "#fff",
+        "title_color": "#fff",
+        "price_color": "#fff",
+        "btn_bg1": "#F4D983",
+        "btn_text1": "#000",
+        "btn_text": "Buy with shop Pay",
+        "btn_bg2": "#0367fe",
+        "btn_text2": "#fff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "add_product_describe_yhhwDq",
+    "custom_liquid_WtDGtr",
+    "product-recommendations",
+    "recently-viewed-products",
+    "1710920027600d6fcf",
+    "add_product_button_RUCVkj"
+  ]
+}

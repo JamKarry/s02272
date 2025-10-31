@@ -1,0 +1,59 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-customers-account",
+      "blocks": {
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "order_list": {
+          "type": "order_list",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "header",
+        "order_list"
+      ],
+      "settings": {}
+    },
+    "17230024820f726a0b": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_all_reviews_text_VzNVXJ": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/all_reviews_text\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_all_reviews_text_VzNVXJ"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "172300253076b7d06c": {
+      "type": "apps",
+      "blocks": {
+        "bon_loyalty_loyalty_page_block_gmjCbc": {
+          "type": "shopify:\/\/apps\/bon-loyalty\/blocks\/loyalty-page-block\/63496a04-c097-48d1-8c11-475aec24b12e",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "bon_loyalty_loyalty_page_block_gmjCbc"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "17230024820f726a0b",
+    "172300253076b7d06c"
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_large": false
+      }
+    },
+    "background_video_NbbAit": {
+      "type": "background-video",
+      "disabled": true,
+      "settings": {
+        "section_size": "small",
+        "video_url": "https:\/\/youtu.be\/ZfxKZ2jFz_g"
+      }
+    },
+    "slideshow_RdDRFM": {
+      "type": "slideshow",
+      "blocks": {
+        "image_QDFG4p": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/head-1.jpg",
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
+        "image_iWXkcp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/147623850071847000_a700xH.jpg",
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "Yunnan baiyao",
+            "title": "Guarding Life and Health",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
+        "image_qKNhkw": {
+          "type": "image",
+          "settings": {
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "Slide title",
+            "title": "Tell your story",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_QDFG4p",
+        "image_iWXkcp",
+        "image_qKNhkw"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_fullscreen": false,
+        "show_arrow": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
+      }
+    },
+    "text_with_image_b9Txzj": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "BYNATURE",
+        "title": "EMPOWER THE DESIRE FOR A HEALTHIER LIFE",
+        "image": "shopify:\/\/shop_images\/man-hiking-in-mountains.jpg",
+        "image_position": "right",
+        "content": "<p>In ancient times, humans coexisted harmoniously with nature, drawing wisdom and strength from it. However, as time passed, our lives became busy and fragmented, and we gradually distanced ourselves from the embrace of nature, forgetting the profound connection we once had.Yet, in this bustling and stressful modern world, there is a group of people who maintain a longing and reverence for nature. They believe that nature is our greatest teacher and the source of our physical and mental well-being. It is this group of people who created a brand called BYNATURE.The brand color of BYNATURE is blue, symbolizing tranquility, freshness, and health. The brand logo is a simplified tree canopy shape, representing life, growth, and the power of nature. This logo is a symbol of our deep reverence for nature and our commitment to sustainable development.<br\/>In the story of BYNATURE, we continue to embody a desire for a healthier life. We believe that everyone has the right to enjoy a healthy and balanced lifestyle, which is founded on living in harmony with nature.Our product range includes personal care products, herbal food products, herbal supplements, and native herbal products. We base our products on herbs, combining modern technology and research to provide you with natural and effective solutions. Our personal care products, centered around herbal ingredients, help you maintain a healthy oral cavity, skin, and body. Our herbal food products and supplements infuse the nutritional benefits of herbs, offering you a delightful and healthful experience.BYNATURE represents a journey of reconnecting with nature, seeking balance, and rediscovering our inherent beauty and strength. We aspire for each individual to establish a deep connection with nature, and to explore the wisdom that nature has to offer.<br\/>Let us together embrace the health, harmony, and joy that BYNATURE brings.<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "custom_html_rUNFkD": {
+      "type": "custom-html",
+      "custom_css": [],
+      "settings": {
+        "subheading": "Winona",
+        "title": "POWERED BY NATURE PLANTS",
+        "html": "<div style=\"padding:1 1 1 1; width:25%; height:150px\">\n<div style=\"width:25%; height:50px; background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/blog-img-top.jpg?v=1710847581)\">\n<\/div> <!-- herbs background image-->\n<h2 style=\"padding-top:1px; padding-bottom:1px; text-align:center;\">\nAVOCADO\n<\/h2>\n<p style=\"padding-top:1px; max-height:120px;overflow:hidden; width: relative;white-space: normal;text-overflow: ellipsis\">\nAvocado (Persea americana) is a fruit that is widely known for its creamy texture, mild flavor, and nutritional benefits. Here are some functions and benefits associated with avocado:\n<\/p>\n<\/div>\n\n<!-- next-->\n<div style=\"padding:1 1 1 1; width:25%; height:150px; \">\n<div style=\"width:25%; height:50px; background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/blog-img-top.jpg?v=1710847581)\">\n<\/div> <!-- herbs background image-->\n<h2 style=\"padding-top:1px; padding-bottom:1px; text-align:center; width:25%\">\nAVOCADO\n<\/h2>\n<p style=\"padding-top:1px; max-height:120px;width:25%;overflow:hidden; width: relative;white-space: normal;text-overflow: ellipsis\">\nAvocado (Persea americana) is a fruit that is widely known for its creamy texture, mild flavor, and nutritional benefits. Here are some functions and benefits associated with avocado:\n<\/p>\n<\/div>"
+      }
+    },
+    "custom_html_DbqphA": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "",
+        "html": "<div style=\"padding:1 1 1 1; width:25%; height:150px; display:flex\">\n<div style=\"height:50px; background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/blog-img-top.jpg?v=1710847581)\">\n<\/div> <!-- herbs background image-->\n<h2 style=\"padding-top:1px; padding-bottom:1px; text-align:center;\">\nAVOCADO\n<\/h2>\n<p style=\"padding-top:1px; max-height:120px;width:25%;overflow:hidden; width: relative;white-space: normal;text-overflow: ellipsis\">\nAvocado (Persea americana) is a fruit that is widely known for its creamy texture, mild flavor, and nutritional benefits. Here are some functions and benefits associated with avocado:\n<\/p>\n<\/div>\n\n<!-- next-->\n<div style=\"padding:1 1 1 1; width:25%; height:150px; display:inline\">\n<div style=\"width:25%; height:50px; background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/blog-img-top.jpg?v=1710847581)\">\n<\/div> <!-- herbs background image-->\n<h2 style=\"padding-top:1px; padding-bottom:1px; text-align:center; width:25%\">\nAVOCADO\n<\/h2>\n<p style=\"padding-top:1px; max-height:120px;width:25%;overflow:hidden; width: relative;white-space: normal;text-overflow: ellipsis\">\nAvocado (Persea americana) is a fruit that is widely known for its creamy texture, mild flavor, and nutritional benefits. Here are some functions and benefits associated with avocado:\n<\/p>\n<\/div>"
+      }
+    },
+    "custom_html_zGwYQL": {
+      "type": "custom-html",
+      "custom_css": [],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<div style=\"display: flex; text-align: center\">\n      <div style=\"width: 25%; padding-left:2px; padding-right:2px\">\n<div style=\"height:50px; background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/blog-img-top.jpg?v=1710847581)\">\n<\/div> <!-- herbs background image-->\n        <h3>AVOCADO<\/h3>\n        <p style=\"margin-left:1px;margin-right:1px;; max-height:120px;overflow:hidden; width: relative;white-space: normal;text-overflow: ellipsis\">\nAvocado (Persea americana) is a fruit that is widely known for its creamy texture, mild flavor, and nutritional benefits. Here are some functions and benefits associated with avocado:<br>\nNutritional Profile: Avocados are nutrient-dense fruits. They are rich in healthy monounsaturated fats, which can help promote heart health and reduce bad cholesterol levels. Avocados also contain vitamins such as vitamin K, vitamin E, vitamin C, and B vitamins, as well as minerals like potassium and magnesium.\n<\/p>\n\n\n<a href=\"https:\/\/www.bynatureintl.com\/blogs\/news\/avocado\" target=\"_blank\">Learn more<\/a>\n      <\/div>\n\n\n      <div style=\"width: 25%; padding-left:2px; padding-right:2px\">\n<div style=\"height:50px; background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/top-img.jpg?v=1710852440)\">\n<\/div> <!-- herbs background image-->\n        <h3>RHIZOMA PARIDIS YUNNANENSIS\n<\/h3>\n<p style=\"margin-left:1px;margin-right:1px;  max-height:120px;overflow:hidden; width: relative;white-space: normal;text-overflow: ellipsis\">\nRhizoma paridis yunnanensis, also known as Yunnan Paris Rhizome or Yunnan Paridis, is a medicinal herb that is primarily found in the Yunnan province of China. It has a long history of traditional use in Chinese medicine and is known for its potential health benefits. Here are some functions and uses of Rhizoma paridis yunnanensis in the healthcare field:\n\n<\/p>\n\n\n<a href=\"https:\/\/www.bynatureintl.com\/blogs\/news\/rhizoma-paridis-yunnanensis\" target=\"_blank\">Learn more<\/a>\n      <\/div>\n\n\n<div style=\"width: 25%; padding-left:2px; padding-right:2px\">\n<div style=\"height:50px; background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/img-top.jpg?v=1710852448)\">\n<\/div> <!-- herbs background image-->\n        <h3>YUNNAN CAMELLIA\n<\/h3>\n        <p style=\"margin-left:1px;margin-right:1px;; max-height:120px;overflow:hidden; width: relative;white-space: normal;text-overflow: ellipsis\">Yunnan Camellia, also known as Camellia sinensis or tea plant, is a species of evergreen shrub native to the Yunnan province in China. It is widely cultivated for its leaves, which are primarily used to produce various types of tea. In addition to its popularity as a beverage, Yunnan Camellia also has several functions and benefits when used in skincare products. Here are some of its skincare functions:<\/p>\n\n<a href=\"https:\/\/www.bynatureintl.com\/blogs\/news\/yunnan-camellia\" target=\"_blank\">Learn more<\/a>\n      <\/div>\n\n\n<div style=\"width: 25%; padding-left:2px; padding-right:2px\">\n<div style=\"height:50px; background-repeat:no-repeat; background-position:center; background-size:contain; background-image:url(https:\/\/cdn.shopify.com\/s\/files\/1\/0837\/3347\/9711\/files\/blog-img-utilis_royle.jpg?v=1710852675)\">\n<\/div> <!-- herbs background image-->\n        <h3>PRINSEPIA UTILIS ROYLE<\/h3>\n         <p style=\"margin-left:1px;margin-right:1px;; max-height:120px;overflow:hidden; width: relative;white-space: normal;text-overflow: ellipsis\">Prinsepia utilis Royle comes from the pure Shangri-La Snow Mountain at an altitude of about 3,200 meters, with strong vitality and repair ability. Winona's lab study shows that its extract can repair the skin barrier and keep skin healthy.<\/p>\n<a href=\"https:\/\/www.bynatureintl.com\/blogs\/herbs\/prinsepia-utilis-royle\" target=\"_blank\">Learn more<\/a>\n      <\/div>\n\n <\/div>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "background_video_NbbAit",
+    "slideshow_RdDRFM",
+    "text_with_image_b9Txzj",
+    "custom_html_rUNFkD",
+    "custom_html_DbqphA",
+    "custom_html_zGwYQL"
+  ]
+}
