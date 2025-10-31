@@ -1,0 +1,22 @@
+{% form 'product', product, id: 'AddToCartForm' %}
+    {% comment %} <input type="hidden" name="return_to" value="/checkout"> {% endcomment %}
+    <input type="hidden" id="Quantity" name="quantity" value="1" min="1">
+    <input type="hidden" name="return_to" id="action-address" value="/cart">
+    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+
+    <div class="ProductForm__BuyButtons ProductForm__BuyButtons_lv85se">
+        <button type="submit" id="ProductForm__AddToCart" data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}" class="ProductForm__AddToCart Button {% if product.selected_or_first_available_variant.available and use_primary_button %}Button--primary{% else %} {% endif %} " {% if product.selected_or_first_available_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}>
+            {%- if product.selected_or_first_available_variant.available -%}
+                <span>{% if product.template_suffix == 'pre-order' %}{{ 'product.form.pre_order' | t }}{% else %}{{ 'product.form.add_to_cart' | t }}{% endif %}</span>
+            {%- else -%}
+                {{- 'product.form.sold_out' | t -}}
+            {%- endif -%}
+        </button>
+
+        {%- if product.selected_or_first_available_variant.available -%}
+            <button type="submit" id="ProductForm__Checkout" data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}" class="ProductForm__AddToCart Button {% if product.selected_or_first_available_variant.available and use_primary_button %}Button--primary{% else %} {% endif %} " {% if product.selected_or_first_available_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}>
+                <span>{{ btn_text }}</span>
+            </button>
+        {% endif %}
+    </div>
+{% endform %}
