@@ -1,0 +1,470 @@
+
+<style>
+  .prodcut-bottom-wrapper_lvl861l {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 8888;
+  }
+
+  #prodcut-bottom-wrapper_lvl861l {
+    display: none;
+  }
+  .prodcut-wrapper_lvl861l {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-left: 120px;
+    gap: 20px;
+  }
+
+
+  .product-title_lvl861l {
+    flex: 1;
+  }
+  .product-title_lvl861l *,
+  .product-price_lvl861l {
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .product-title_lvl861l {
+    padding-left: 15px;
+  }
+
+  .product-price_lvl861l {
+    font-size: calc(var(--font-heading-scale) * 1.4rem);
+  }
+
+  #compare_at_price_lvl861l {
+    /* margin-right:  18px; */
+    text-decoration: line-through;
+  }
+  #price_lvl861l {
+    /* margin-right: 18px; */
+  }
+
+  /* PRODCUT FOOTER BOTTOM 120 */
+  .footer_lvl861l{
+    padding-bottom: 120px !important;
+  }
+
+
+
+
+    .product-iamge_lvl861l {
+        width: 130px;
+        height: 72px;
+        /* margin-right: 20px; */
+    }
+    .product-iamge_lvl861l img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .prodcut-wrapper_lvl861l .buy-buttons {
+        margin-top: 0 !important;
+    }
+
+    .product-button-lvl861l {
+        width: 50%;
+    }
+
+
+
+
+    .ProductForm__BuyButtons_lv85se {
+        display: flex;
+        align-items: center;
+    }
+
+    .ProductForm__BuyButtons_lv85se button {
+        text-wrap: nowrap;
+        height: 72px;
+        border: 0;
+        flex: 1;
+    }
+    .ProductForm__BuyButtons_lv85se button span {
+        transition: .3s;
+    }
+    .ProductForm__BuyButtons_lv85se button:hover span {
+        transform: translateX(-10px);
+    }
+
+
+
+    @media (max-width: 1110px) {
+        .prodcut-wrapper_lvl861l {
+            padding-left: 0;
+        }
+
+        .ProductForm__BuyButtons_lv85se button {
+            height: 58px;
+        }
+
+        .product-iamge_lvl861l,
+        .product-title_lvl861l {
+            display: none;
+        }
+        .prodcut-info_lvl861l {
+            display: block;
+        }
+        .product-title_lvl861l * {
+            font-size: calc(var(--font-heading-scale) * 1.2rem); 
+        }
+
+        .product-price_lvl861l {
+            margin-top: 3px;
+        }
+        .product-price_lvl861l span {
+            display: block;
+            margin-left: 0px !important;
+        }
+        
+        .product-price_lvl861l {
+            font-size: calc(var(--font-heading-scale) * 1rem);
+        }
+
+
+        .product-button-lvl861l {
+            width: 100%;
+        }
+    }
+</style>
+
+{% liquid
+    assign bg_color = section.settings.bg_color 
+    assign bg_transparency = section.settings.bg_transparency 
+    assign border_color = section.settings.border_color 
+    assign title_color = section.settings.title_color 
+    assign price_color = section.settings.price_color 
+
+
+    assign btn_bg1 = section.settings.btn_bg1 
+    assign btn_text1 = section.settings.btn_text1 
+
+    assign btn_bg2 = section.settings.btn_bg2 
+    assign btn_text2 = section.settings.btn_text2 
+
+%}
+{% style %}
+    .prodcut-bottom-wrapper_lvl861l {
+        border-top: 1px solid {{ border_color }};
+        background-color: {{ bg_color }};
+    }
+    .product-title_lvl861l * {
+        color: {{ title_color }};
+    }
+
+    .product-price_lvl861l {
+        color: {{ price_color }}
+    }
+
+    .product-button-lvl861l #ProductForm__AddToCart {
+        background-color: {{ btn_bg1 }};
+        color: {{ btn_text1 }};
+    }
+    .product-button-lvl861l #ProductForm__Checkout {
+        background-color: {{ btn_bg2 }};
+        color: {{ btn_text2 }};
+    }
+{% endstyle %}
+
+
+
+
+
+
+                     
+<div id="prodcut-bottom-wrapper_lvl861l">
+    <div class="prodcut-wrapper_lvl861l">
+        
+            <div class="product-iamge_lvl861l">
+                <img src="{{ product.featured_image |  image_url: width: 300 }}" alt="">
+            </div>
+
+            <div class="product-title_lvl861l">
+                <h1>{{ product.title | escape }}</h1>
+            </div>
+ 
+
+            <div class="product-button-lvl861l">
+                {%- render '1-buy-buttons',
+                    block: block,
+                    product: product,
+                    product_form_id: product_form_id,
+                    section_id: section.id,
+                    show_pickup_availability: true,
+                    btn_text: section.settings.btn_text
+                -%}
+            </div>
+    </div>
+</div>
+                            
+
+
+
+
+
+
+
+
+{% comment %} <script>
+  let settingValue = 600;
+  let bottomWrapper = document.getElementById('prodcut-bottom-wrapper_lvl861l');
+  let priceEL = document.getElementById('price_lvl861l');
+  let productIdInput = document.getElementById('product_{{ section.id }}_lvl861l')
+
+  let lableS = document.querySelectorAll('.new_variant-selects_lcs25');
+  window.addEventListener('scroll', function () {
+    const scrollValue = window.scrollY || window.pageYOffset;
+    if (scrollValue >settingValue ) {
+      setBottomWrapper('block')
+    } else {
+      setBottomWrapper('none')
+    }
+  }, false)
+  
+  let t = null;
+  lableS.forEach(function (item) {
+    item.addEventListener('click', function () {
+        clearTimeout(t);
+        t = setTimeout(function () {
+            let id = getParams();
+
+
+            console.log('sss', id);
+            return;
+            let currentVariants = findVariants(id);
+            setPrice(currentVariants.price)
+        },10);
+        
+    })
+  })
+
+
+ 
+  function getParams() {
+    return productIdInput.value;
+  }
+
+  function setBottomWrapper (dir) {
+    bottomWrapper.style.display = dir;
+  }
+
+  function getProductData () {
+    return {{ product.variants |  json }}
+  }
+
+  function findVariants (id) {
+    let data = getProductData();
+    return data.find(x => x.id == id)
+  }
+
+  function setPrice (price) {
+    priceEL.innerText = formatMoney(price, "{{shop.money_format}}") + getShopCurrency();
+  }
+  function getShopCurrency () {
+    return Shopify.currency.active
+  }
+</script> {% endcomment %}
+
+
+
+
+
+<script>
+    let settingValue = 300;
+    let docHeight = 0
+    let viewportHeight = window.innerHeight;
+    let bottomWrapper = document.getElementById('prodcut-bottom-wrapper_lvl861l');
+
+    function setBottomWrapper (dir) {
+        bottomWrapper.style.display = dir
+    }
+
+    function pageScroll () {
+        document.addEventListener('scroll', throttle(handleScroll, 200));
+    }
+
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        docHeight = document.documentElement.scrollHeight + window.innerHeight;
+        pageScroll();
+    });
+
+    
+    function handleScroll () {
+        const scrollValue = window.scrollY || window.pageYOffset ; 
+        docHeight = document.documentElement.scrollHeight
+
+        if (scrollValue + viewportHeight >= docHeight) {
+            setBottomWrapper('none')
+            return;
+        }
+
+        if (scrollValue > settingValue ) {
+            setBottomWrapper('block')
+        } else {
+            setBottomWrapper('none')
+        }
+    }
+
+    function throttle(func, delay, options = { leading: true, trailing: true }) {
+        let lastTime = 0;
+        let timer = null;
+
+        return function(...args) {
+            const now = Date.now();
+
+            if (!lastTime && options.leading === false) {
+            lastTime = now;
+            }
+
+            const remaining = delay - (now - lastTime);
+
+            if (remaining <= 0 || remaining > delay) {
+            if (timer) {
+                clearTimeout(timer);
+                timer = null;
+            }
+
+            lastTime = now;
+            func.apply(this, args);
+            } else if (!timer && options.trailing !== false) {
+            timer = setTimeout(() => {
+                lastTime = options.leading === false ? 0 : Date.now();
+                timer = null;
+                func.apply(this, args);
+            }, remaining);
+            }
+        };
+    }
+</script>
+
+
+
+
+
+
+{% schema %}
+{
+    "name": "✨ Add Cart",
+    "class": "prodcut-bottom-wrapper_lvl861l",
+    "settings": [
+
+        {
+            "type": "color",
+            "id": "bg_color",
+            "label": "Background",
+            "default": "#fff"
+        },
+        {
+            "type": "color",
+            "id": "border_color",
+            "label": "Border",
+            "default": "#fff"
+        },
+        {
+            "type": "color",
+            "id": "title_color",
+            "label": "Title",
+            "default": "#000"
+        },
+        {
+            "type": "color",
+            "id": "price_color",
+            "label": "Price",
+            "default": "#fff"
+        },
+
+
+
+        {
+            "type": "header",
+            "content": "Button 1"
+        },
+        {
+            "type": "color",
+            "id": "btn_bg1",
+            "label": "Background",
+            "default": "#F4D983"
+        },
+        {
+            "type": "color",
+            "id": "btn_text1",
+            "label": "Text",
+            "default": "#000"
+        },
+
+
+
+
+
+        {
+            "type": "header",
+            "content": "Button 2"
+        },
+        {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Button Label",
+            "default": "Buy with shop Pay"
+        },
+        {
+            "type": "color",
+            "id": "btn_bg2",
+            "label": "Background",
+            "default": "#0367fe"
+        },
+        {
+            "type": "color",
+            "id": "btn_text2",
+            "label": "Text",
+            "default": "#fff"
+        }
+    ],
+    "presets": [
+        {
+            "name": "✨ Add Cart"
+        }
+    ]
+}
+{% endschema %}
+
+
+
+
+<script>
+    $(function () {
+        let AddToCartForm = document.getElementById('AddToCartForm');
+        $(AddToCartForm).on('submit', function (event) { event.preventDefault()});
+        $('#ProductForm__AddToCart').click(function (event) { 
+            event.preventDefault()
+            AddToCartForm.submit();
+        });
+
+        $('#ProductForm__Checkout').click(function (event) {
+            event.preventDefault();
+            $('#action-address').val('/checkout');
+            
+            deleteCart(function () { AddToCartForm.submit()})
+        });
+    })
+
+
+    function deleteCart(fn) {
+        $.ajax({
+        type: "GET", 
+        url: window.Shopify.routes.root + 'cart/clear',
+        dataType: "json",
+            success: function (response) { 
+                fn();
+            },
+        })
+    }
+</script>

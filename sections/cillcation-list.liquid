@@ -1,0 +1,245 @@
+<style>
+  #home-diy-step.home-title {
+    padding-top: 40px;
+    margin-bottom: 25px;
+  }
+  
+  #home-diy-step h1 {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    color: #333;
+    padding: 30px 0;
+    margin: 0 0 50px;
+    text-align: center;
+    border-bottom: 1px #F1F1F1 solid;
+  }
+  #home-2ads,
+  #home-bigad,
+  #home-diy-step,
+  .home-ads-section {
+    background-color: #fff;
+  }
+  .home-section-container {
+    padding-bottom: 50px;
+  }
+  .container,
+  .container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .home-title {
+    padding-top: 40px;
+    margin-bottom: 25px;
+  }
+  #home-diy-step .home-diy-item {
+    position: relative;
+    text-align: center;
+    display: block;
+    padding: 10px 7.5px;
+    overflow: hidden;
+  }
+  #home-diy-step .home-diy-item .diy-step-num {
+    background-image: url('https://www.nsluxury.com/images/index/diy_step_num_bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top center;
+    padding: 1px 7px;
+    margin-bottom: 7px;
+    width: 100%;
+    max-width: 90px;
+    height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 18px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  #home-diy-step .home-diy-item .diy-step-num,
+  #home-diy-step .home-diy-item h3,
+  #home-diy-step .home-diy-item img {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+  }
+  #home-diy-step .home-diy-item h3 {
+    font-size: 21px;
+  }
+  #home-diy-step .home-diy-item h3 {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #333;
+    letter-spacing: 2px;
+    -webkit-transition: color 1.3s ease-in-out;
+    transition: color 1.3s ease-in-out;
+    white-space: nowrap;
+  }
+  #home-diy-step .home-diy-item img {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 1.3s ease-in-out;
+    transition: -webkit-transform 1.3s ease-in-out;
+    transition: transform 1.3s ease-in-out;
+    transition: transform 1.3s ease-in-out, -webkit-transform 1.3s ease-in-out;
+  }
+  #home-diy-step .home-diy-item .light-overlay {
+    position: absolute;
+    width: 106%;
+    height: 200px;
+    top: -75px;
+    left: -3%;
+    background-image: url('https://www.nsluxury.com/images/index/step_light.png');
+    background-position: center top;
+    background-size: 100%;
+    z-index: 1;
+    -webkit-transition: opacity 0.2s ease-in-out, -webkit-filter 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out, -webkit-filter 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out, filter 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out, filter 0.2s ease-in-out, -webkit-filter 0.2s ease-in-out;
+    opacity: .5;
+    filter: alpha(opacity=10);
+  }
+  #home-diy-step .home-diy-item .border-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 62.26%;
+    border: 4px solid #EFE1C4;
+    z-index: 0;
+  }
+  #home-diy-step .home-diy-item .border-box .hover-bg#step-hover-bg-1 {
+    background-image: url('https://www.nsluxury.com/images/index/step1_hover.jpg');
+  }
+  #home-diy-step .home-diy-item .border-box .hover-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    opacity: 0;
+    filter: alpha(opacity=0) blur(3px);
+    -webkit-transition: opacity 0.4s ease-in-out, background 0.3s ease-in-out;
+    transition: opacity 0.4s ease-in-out, background 0.3s ease-in-out;
+    background-size: 105% auto;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+  #home-diy-step .home-diy-item:hover img {
+    -webkit-transform: scale(1.03) translate(0, 3px);
+    -ms-transform: scale(1.03) translate(0, 3px);
+    transform: scale(1.03) translate(0, 3px);
+  }
+  #home-diy-step .home-diy-item .border-box .hover-bg#step-hover-bg-2 {
+    background-image: url('https://www.nsluxury.com/images/index/step2_hover.jpg');
+  }
+  #home-diy-step .home-diy-item .border-box .hover-bg#step-hover-bg-3 {
+    background-image: url('https://www.nsluxury.com/images/index/step3_hover.jpg');
+  }
+  @media screen and (min-width: 992px) {
+    #home-diy-step .home-diy-item img {
+      max-width: 200px;
+    }
+    #home-diy-step .home-diy-item:hover .hover-bg {
+      -webkit-transition-delay: 0.2s !important;
+      transition-delay: 0.2s !important;
+      opacity: .7;
+      filter: alpha(opacity=70);
+      background-size: 100% auto;
+    }
+  }
+</style>
+<div id="home-diy-step" class="container-fluid home-section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 home-title">
+        <h1>一站式鑽石首飾香港專門店</h1>
+        <p style="text-align: center;font-size:18px;">立即購買並定制您專屬的鑽石戒指</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <a
+          class="home-diy-item"
+          title="挑選鑽石"
+          href="diamonds"
+          target="_self">
+          <div class="diy-step-num">STEP 1</div>
+          <h3>挑選鑽石</h3>
+          <img
+            src="https://www.nsluxury.com/images/index/step1_product.png"
+            alt=""
+            data-pagespeed-url-hash="2699979789"
+            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+            data-pagespeed-lsc-url="http://www.nsluxury.com/images/index/step1_product.png">
+          <div class="light-overlay"></div>
+          <div class="border-box">
+            <div id="step-hover-bg-1" class="hover-bg"></div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-4">
+        <a
+          class="home-diy-item"
+          title="挑選戒指托"
+          href="product-category/engagement/18k-gold-ring"
+          target="_self">
+          <div class="diy-step-num">STEP 2</div>
+          <h3>挑選戒指托</h3>
+          <img
+            src="https://www.nsluxury.com/images/index/step2_product.png"
+            alt=""
+            data-pagespeed-url-hash="3784501758"
+            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+            data-pagespeed-lsc-url="http://www.nsluxury.com/images/index/step2_product.png">
+          <div class="light-overlay"></div>
+          <div class="border-box">
+            <div id="step-hover-bg-2" class="hover-bg"></div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-4">
+        <a
+          class="home-diy-item"
+          title="成功訂製"
+          href="feed/customize"
+          target="_self">
+          <div class="diy-step-num">STEP 3</div>
+          <h3>成功訂製</h3>
+          <img
+            src="http://www.nsluxury.com/images/index/step3_product.png"
+            alt=""
+            data-pagespeed-url-hash="574056431"
+            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+            data-pagespeed-lsc-url="http://www.nsluxury.com/images/index/step3_product.png">
+          <div class="light-overlay"></div>
+          <div class="border-box">
+            <div id="step-hover-bg-3" class="hover-bg"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "页面跳转",
+    "settings": []
+  }
+{%endschema%}
