@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "heading_color": "#1c1b1b",
@@ -41,13 +50,13 @@
     "cart_enable_notes": false,
     "cart_show_free_shipping_threshold": false,
     "cart_free_shipping_threshold": "100",
-    "social_facebook": "https:\/\/www.facebook.com\/profile.php?id=61550744171089",
-    "social_instagram": "https:\/\/instagram.com\/bynature_sg",
-    "social_youtube": "https:\/\/www.youtube.com\/@ByNatureHealthcare",
-    "social_tiktok": "https:\/\/www.tiktok.com\/@bynature.healthca",
-    "social_linkedin": "linkedin.com\/company\/bynature-healthcare",
-    "favicon": "shopify:\/\/shop_images\/favicon.png",
-    "checkout_logo_image": "shopify:\/\/shop_images\/Logo-1.png",
+    "social_facebook": "https://www.facebook.com/profile.php?id=61550744171089",
+    "social_instagram": "https://instagram.com/bynature_sg",
+    "social_youtube": "https://www.youtube.com/@ByNatureHealthcare",
+    "social_tiktok": "https://www.tiktok.com/@bynature.healthca",
+    "social_linkedin": "linkedin.com/company/bynature-healthcare",
+    "favicon": "shopify://shop_images/favicon.png",
+    "checkout_logo_image": "shopify://shop_images/Logo-1.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "medium",
     "checkout_body_background_color": "#ffffff",
@@ -71,7 +80,7 @@
           "home_page_only": false,
           "background": "#f94c43",
           "text_color": "#ffffff",
-          "content": "雙十一特惠，薇諾娜買一贈一，歡迎選購。",
+          "content": "春節特惠，薇諾娜買一贈一，歡迎選購。",
           "link": ""
         }
       },
@@ -80,7 +89,7 @@
         "settings": {
           "bg_opacity": 6,
           "use_sticky_header": true,
-          "logo": "shopify:\/\/shop_images\/Logo-1.png",
+          "logo": "shopify://shop_images/Logo-1.png",
           "logo_max_width": 50,
           "mobile_logo_max_width": 50,
           "show_country_selector": false,
@@ -100,9 +109,9 @@
           "footer-0": {
             "type": "text",
             "settings": {
-              "logo": "shopify:\/\/shop_images\/20240527101214.png",
+              "logo": "shopify://shop_images/20240527101214.png",
               "title": "萊趣健康",
-              "content": "<p>萊趣健康在香港本地運營，整合全球優質資源，以自然基礎產品為主，為您提供可信賴的健康產品，為您的健康生活賦能。<\/p>",
+              "content": "<p>萊趣健康在香港本地運營，整合全球優質資源，以自然基礎產品為主，為您提供可信賴的健康產品，為您的健康生活賦能。</p>",
               "show_social_media": false
             }
           },
@@ -122,7 +131,7 @@
             "type": "newsletter",
             "settings": {
               "title": "訂閱",
-              "content": "<p>歡迎訂閱，訂閱後您將會獲得公司不定期發送的優惠。<\/p>",
+              "content": "<p>歡迎訂閱，訂閱後您將會獲得公司不定期發送的優惠。</p>",
               "show_social_media": true
             }
           }
@@ -147,7 +156,7 @@
           "show_only_for_visitors": true,
           "show_only_once": true,
           "title": "Popup",
-          "content": "<p>慶七夕特惠，薇諾娜特價+買一盒送同樣規格產品一片，歡迎選購。<\/p>",
+          "content": "<p>慶七夕特惠，薇諾娜特價+買一盒送同樣規格產品一片，歡迎選購。</p>",
           "show_newsletter": true,
           "apparition_delay": 5
         }
@@ -156,12 +165,12 @@
     "content_for_index": [],
     "blocks": {
       "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
         "settings": {}
       },
       "5493738229337669960": {
-        "type": "shopify:\/\/apps\/bon-loyalty\/blocks\/app-embed\/63496a04-c097-48d1-8c11-475aec24b12e",
+        "type": "shopify://apps/bon-loyalty/blocks/app-embed/63496a04-c097-48d1-8c11-475aec24b12e",
         "disabled": false,
         "settings": {
           "type": "flip",
@@ -251,7 +260,7 @@
               "type": "text",
               "settings": {
                 "title": "About the shop",
-                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>",
                 "show_social_media": true
               }
             },
@@ -265,7 +274,7 @@
               "type": "newsletter",
               "settings": {
                 "title": "Newsletter",
-                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.</p>"
               }
             }
           },
@@ -360,7 +369,7 @@
               "type": "text",
               "settings": {
                 "title": "About the shop",
-                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>",
                 "show_social_media": true
               }
             },
@@ -374,7 +383,7 @@
               "type": "newsletter",
               "settings": {
                 "title": "Newsletter",
-                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.</p>"
               }
             }
           },
@@ -470,7 +479,7 @@
               "type": "text",
               "settings": {
                 "title": "About the shop",
-                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>",
                 "show_social_media": true
               }
             },
@@ -484,7 +493,7 @@
               "type": "newsletter",
               "settings": {
                 "title": "Newsletter",
-                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.</p>"
               }
             }
           },
